@@ -1,0 +1,76 @@
+.maincontainer {
+  height: 88vh;
+  width: 100vw;
+  background-color: #202020;
+  padding-top: 15px;
+}
+.create > form {
+  height: 38vh;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.maincontainer > .create > form > input {
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 30px;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-family: "Poppins";
+}
+input:hover {
+  background-color: black;
+  color: white;
+}
+input::placeholder {
+  text-align: center;
+}
+.f {
+  height: 15%;
+  width: 70%;
+  border: 2px solid black;
+}
+.s {
+  width: 40%;
+  height: 15%;
+  border: 2px solid black;
+}
+.createbtn {
+  margin-top: 30px;
+  width: 10%;
+  height: 12%;
+  color: red;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.createbtn:hover {
+  background-color: red;
+  color: white;
+}
+.allpasswords {
+  height: 45vh;
+  width: 90vw;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .create>form{
+    width: 100vw;
+  }
+  .createbtn{
+    width: 20%;
+  }
+  
+}

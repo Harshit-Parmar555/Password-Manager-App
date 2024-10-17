@@ -1,0 +1,45 @@
+.navbar{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  color: red;
+  width: 15%;
+  height: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+.logout-btn{
+  background-color: white;
+  color: black;
+  height: 35px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-family: "Poppins";
+}
+.navbarbtn:hover{
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .logout-btn{
+    right: 20px;
+    font-size: small;
+  }
+  .nav-logo{
+    font-size: 20px;
+  }
+}
