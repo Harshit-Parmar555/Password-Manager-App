@@ -5,7 +5,7 @@ const Box = (props) => {
   const handledelete = async () => {
     try {
       const response = await axios.delete(
-        `/api/v1/password/deletepassword/${props.id}`
+        `https://password-manager-app-3yo3.onrender.com/api/v1/password/deletepassword/${props.id}`
       );
       if (response.data.success) {
         alert("password deleted successfully");

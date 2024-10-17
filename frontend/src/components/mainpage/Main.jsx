@@ -19,7 +19,7 @@ const Main = () => {
   const getuserpasswords = async () => {
     try {
       const id = localStorage.getItem("userid");
-      const { data } = await axios.get(`/api/v1/password/getpasswords/${id}`);
+      const { data } = await axios.get(`https://password-manager-app-3yo3.onrender.com/api/v1/password/getpasswords/${id}`);
       setuserpasswords(data.user.passwords);
     } catch (error) {
       console.log("error in the get password function", error);
@@ -33,7 +33,7 @@ const Main = () => {
   const onSubmit = async (data) => {
     try {
       const userid = localStorage.getItem("userid");
-      const response = await axios.post("/api/v1/password/createpassword", {
+      const response = await axios.post("https://password-manager-app-3yo3.onrender.com/api/v1/password/createpassword", {
         website: data.website,
         websiteusername: data.username,
         websitepassword: data.password,

@@ -15,7 +15,7 @@ const Register = () => {
 
   const onSubmit = async (data) => {
     try {
-      const registerdata = await axios.post("/api/v1/user/userregister", {
+      const registerdata = await axios.post("https://password-manager-app-3yo3.onrender.com/api/v1/user/userregister", {
         username: data.username,
         email: data.email,
         password: data.password,

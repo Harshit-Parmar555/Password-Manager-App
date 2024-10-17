@@ -19,7 +19,7 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
-      const logindata = await axios.post("/api/v1/user/userlogin", {
+      const logindata = await axios.post("https://password-manager-app-3yo3.onrender.com/api/v1/user/userlogin", {
         email: data.email,
         password: data.password,
       });
